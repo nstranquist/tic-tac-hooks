@@ -17,6 +17,15 @@
   transform: translateX(-50%);
 }
 
+.board-title {
+  margin: 0;
+  padding: 10px;
+  font-size: 22px;
+  font-weight:  400;
+  text-align: center;
+  text-decoration: underline;
+}
+
 .board-row {
   display: flex;
   max-width: 91px;
