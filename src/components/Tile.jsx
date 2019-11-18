@@ -1,14 +1,13 @@
 import React from 'react'
 
 const Tile = ({
-  row,
-  col,
+  index,
   tile,
   handleTileClick,
 }) => {
   return (
     <div className='tile'
-      onClick={() => handleTileClick(row, col)}>
+      onClick={() => handleTileClick(index)}>
       {tile === null ? '' : tile}
     </div>
   )

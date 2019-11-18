@@ -13,6 +13,8 @@
   position: absolute;
   left: 50%;
   top: 50px;
+  width: 91px;
+  /* max-width: 91px; */
   text-align: 'center';
   transform: translateX(-50%);
 }
@@ -26,16 +28,28 @@
   text-decoration: underline;
 }
 
-.board-row {
+/* .board-row {
   display: flex;
   max-width: 91px;
-}
+} */
 
 .tile {
-  flex: 1;
+  /* flex: 1; */
+  display: inline-block;
   height: 30px;
+  max-height: 30px;
   width: 30px;
   border: 1px solid rgba(0,0,0,.4);
   text-align: center;
   line-height: 30px;
+  cursor: pointer;
+}
+.tile:hover {
+  background: #ddd;
+  transition: .15s ease-in-out;
+}
+
+.restart-btn {
+  text-align: center;
+  display: block;
 }
