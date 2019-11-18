@@ -106,7 +106,7 @@ const App = () => {
     <div className="board-container">
       <h1 className="board-title">
         Tic Tac Hooks</h1>
-      {winner && <p>Winner: {winner}</p> }
+      {winner && <p className='winner-text'>Winner: {winner}</p> }
       <div className="board">
         {/* 9 tiles, will want to map */}
         {board.map((tile, tileIndex) => {
@@ -114,7 +114,7 @@ const App = () => {
           return <Tile key={tileIndex} index={tileIndex} tile={tile} handleTileClick={handleTileClick} />
         })}
       </div>
-      {winner && <button onClick={resetGame}>Restart</button>}
+      {winner && <button className='restart-btn' onClick={resetGame}>Restart</button>}
     </div>
   );
 }
